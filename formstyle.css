@@ -1,0 +1,100 @@
+body {
+    color: #893F04;
+    margin: auto;
+    text-align: justify;
+}
+.startofmaincontent {
+    margin-top: 40px;
+}
+#requestbg {
+    width: 100%;
+}
+p a {
+    color: #546344;
+    transition: all .25s linear;
+    &:hover {
+        color: grey;
+    }
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+
+    & td, th {
+        padding: 10px;
+        border-width: 2px;
+        border-color: #723a0c;
+    }
+}
+
+
+#formdes {
+    text-align: justify;
+    margin: 70px auto 0;
+}
+
+#tabledes, #formdes {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+form {
+    display: table;
+    margin: 30px auto;
+    max-width: 500px;
+    & label, & input {
+        display: table-cell;
+        margin: 15px;
+        vertical-align: middle;
+    }
+}
+
+
+label {
+    text-align: right;
+    width: 50%;
+}
+
+fieldset {
+    margin: auto;
+    border-color: #893F04;
+    border-radius: 20px;
+
+    & p {
+        display: table-row;
+    }
+}
+
+#submitbutton {
+    width: 100px;
+    height: 30px;
+    border-radius: 10rem;
+    border: none;
+    color: #893F04;
+    background-color: white;
+    &:hover {
+        background-color: lightgrey;
+    }
+}
+
+/*for mobile*/
+@media only screen and (max-width: 768px) {
+    #formdes, #tabledes {
+        width: 80vw;
+        margin: auto;
+        padding: 1.5vw;
+    }
+    #tabledesc {
+        margin-top: 20px;
+    }
+    #tablediv {
+        width: 80vw;
+        overflow-x: auto;
+        margin: auto;
+    }
+    form {
+      width: 90vw;
+    }
+}

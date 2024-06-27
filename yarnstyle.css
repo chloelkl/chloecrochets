@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    color: #893F04;
+}
+.startofmaincontent {
+    margin-top: 40px;
+}
+#location {
+    display: flex;
+    justify-content: space-around;
+    padding: 3vw 0;
+    & div {
+        width: 40vw;
+    }
+    & a {
+        color: #546344;
+        &:hover {
+            color: grey;
+        }
+    }
+}
+#locationbg {
+    z-index: -1;
+    width: 100%;
+}
+#toolsoptions {
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+    margin: auto;
+    & div {
+        background-size: 22vw;
+        background-position: center;
+        width: 22vw;
+        height: 8vw;
+        transition: all .25s linear;
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+            background-size: 23vw;
+        }
+    }
+}
+#yarn {
+    background-image: url(images/abouttools/yarntools.jpg);
+}
+#hook {
+    background-image: url(images/abouttools/hooktools.jpg);
+}
+#amiguruni {
+    background-image: url(images/abouttools/amigurunitools.jpg);
+}
+#others {
+    background-image: url(images/abouttools/othertools.jpg);
+}
+#toolsdescriptions {
+    width: 60vw;
+    text-align: justify;
+    margin: 30px auto;
+    & section {
+        border: solid 1px #893F04;
+        display: none;
+        padding-bottom: 30px;
+    }
+    & section div{
+        display: flex;
+        justify-content: space-around;
+    }
+    & h2 {
+        text-align: center;
+    }
+    & img, & p{
+        width: 25vw;
+    }
+    & img {
+        height: 25vw;
+    }
+    & p {
+        margin-block-start: 0;
+    }
+}
+
+/*for mobile*/
+@media only screen and (max-width: 768px) {
+    #location {
+        flex-direction: column;
+        & iframe {
+            margin: auto;
+            width: 80vw;
+            max-height: 30vh;
+        }
+        & div {
+            text-align: justify;
+            width: 80vw;
+            margin: auto;
+        }
+    }
+    #toolsoptions div{
+        height: 12vw;
+    }
+    #toolsdescriptions {
+        width: 90vw;
+        & section div {
+            flex-direction: column;
+        }
+        & p {
+            width: 80vw;
+            margin: auto;
+        }
+        & img {
+            height: 20vh;
+            width: auto;
+            margin: auto;
+        }
+    }
+}
+

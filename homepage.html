@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("HpadWHSOZyo_0NyHD");
+        })();
+    </script>
+
+</head>
+
+<body>
+    
+    <!--navigation bar-->
+    <div class="nav" id="homenav" onmouseover="brownnav()" onmouseleave="checkscroll()">
+        <a class="navoptions selected" href="#">Blog</a>
+        <a class="title">~~CHLOE CROCHETS~~</a>
+        <a class="navoptions" href="yarninfo.html">Yarn&Tools</a>
+        <a class="navoptions" href="requests.html">Requests</a>
+        <a href="javascript:void(0);" class="icon" onclick="openbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="hamoptions">
+        <a class="navoptions selected" href="#">Blog</a>
+        <a class="navoptions" href="yarninfo.html">Yarn&Tools</a>
+        <a class="navoptions" href="requests.html">Requests</a>
+    </div>
+    <div id="greyedout" onclick="openbar(); checkscroll();"></div>
+    <div id="homepagebg">
+        <div id="toptext">
+            <div id="topanimate">
+                <span>WELCOME</span>
+                <span>TO</span>
+            </div>
+        </div>
+        <div id="bottomtext">
+            <div id="bottomanimate">CHLOE CROCHETS!</div>
+        </div>
+    </div>
+
+    <!--showcase-->
+    <section id="allshowcase" class="startofmaincontent">
+        <section class="oneproject" id="section6">
+            <div>
+                <h2>10 July, 2023</h2>
+                <div class="slideshow">
+                    <a class="slideshowarrow previous" onclick="changeslide('purrcat', -1, 4)">&lt;</a>
+                    <a class="slideshowarrow next" onclick="changeslide('purrcat', 1, 4)">&gt;</a>
+                    <img id="purrcat1" class="firstslide" src="images/10july23/purrcat1.jpg"
+                        alt="picture of my crocheted purple and black cat">
+                    <img id="purrcat2" src="images/10july23/purrcat2.jpg" alt="">
+                    <img id="purrcat3" src="images/10july23/purrcat3.jpg" alt="">
+                    <a href="https://littleloveeveryday.com/chubby-cat-amigurumi/" target="_blank"><img id="purrcat4" src="images/10july23/purrcat4.png" alt="link to pattern"></a>
+                    <div class="spans">
+                        <span class="firstdot" id="purrcatspan1" onclick="selectslide('purrcat', 1)"></span> <span id="purrcatspan2" onclick="selectslide('purrcat', 2)"></span> <span id="purrcatspan3"  onclick="selectslide('purrcat', 3)"></span> <span id="purrcatspan4"  onclick="selectslide('purrcat', 4)"></span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="description">
+                <p>
+                    I decided to crochet this cute <a href="https://littleloveeveryday.com/chubby-cat-amigurumi/" target="_blank">chubby little cat</a> as a birthday gift for my friend.
+                    Obviously I had to name her purpur because it's purple.
+                    <br><br>
+                    Making this was tougher than I'd expected.
+                    Deciding the placements of the eyes, embroidery, and body parts was hard because the cat is round and the stuffing may get in the way.
+                    My tip for this is to use A LOT of pins to have a rough idea of what goes where, 
+                    and adjust before sewing everything in.
+                    I managed to pull through and she turned out adorable.
+                </p>
+            </div>
+        </section>
+        <section class="oneproject" id="section5">
+            <div>
+                <h2>2 May, 2023</h2>
+                <div class="slideshow">
+                    <a class="slideshowarrow previous" onclick="changeslide('greenshirt', -1, 3)">&lt;</a>
+                    <a class="slideshowarrow next" onclick="changeslide('greenshirt', 1, 3)">&gt;</a>
+                    <img id="greenshirt1" class="firstslide" src="images/2may23/greenshirt1.jpg"
+                        alt="crocheted green shirt">
+                    <img id="greenshirt2" src="images/2may23/greenshirt2.jpg" alt="">
+                    <a href="https://forthefrills.com/beginner-textured-crop-top-free-crochet-pattern/" target="_blank"><img id="greenshirt3" src="images/2may23/greenshirt3.jpg" alt="link to pattern"></a>
+                    <div class="spans">
+                        <span class="firstdot" id="greenshirtspan1" onclick="selectslide('greenshirt', 1)"></span> <span id="greenshirtspan2" onclick="selectslide('greenshirt', 2)"></span> <span id="greenshirtspan3"  onclick="selectslide('greenshirt', 3)"></span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="description">
+                <p>
+                    This cute top was crocheted using the grit stitch! 
+                    This stitch was new yet simple to me, which is to alternate single and double crochets.
+                    <br><br>
+                    The pattern by <a href="https://www.forthefrills.com" target="_blank">For The Frills</a> is very easy to follow, especially after getting the hang of it.
+                    It's superrr cute too, so that's a plus!
+                </p>
+            </div>
+        </section>
+        <section class="oneproject" id="section4">
+            <div>
+                <h2>17 April, 2023</h2>
+                <div class="slideshow">
+                    <a class="slideshowarrow previous" onclick="changeslide('billie', -1, 6)">&lt;</a>
+                    <a class="slideshowarrow next" onclick="changeslide('billie', 1, 6)">&gt;</a>
+                    <img id="billie1" class="firstslide" src="images/17april23/billie1.jpg"
+                        alt="crocheted billie eilish from her happier than ever album cover">
+                    <img id="billie2" src="images/17april23/billie2.jpg" alt="">
+                    <img id="billie3" src="images/17april23/billie3.jpg" alt="">
+                    <img id="billie4" src="images/17april23/billie4.jpg" alt="">
+                    <img id="billie5" src="images/17april23/billie5.jpg" alt="">
+                    <a href="https://www.lovelycraft.com/billie-eilish-crochet-doll-pdf-amigurumi-free-pattern/" target="_blank"><img id="billie6" src="images/17april23/billie6.jpg" alt="link to pattern"></a>
+                    <div class="spans">
+                        <span class="firstdot" id="billiespan1" onclick="selectslide('billie', 1)"></span> 
+                        <span id="billiespan2" onclick="selectslide('billie', 2)"></span> 
+                        <span id="billiespan3"  onclick="selectslide('billie', 3)"></span> 
+                        <span id="billiespan4"  onclick="selectslide('billie', 4)"></span> 
+                        <span id="billiespan5"  onclick="selectslide('billie', 5)"></span> 
+                        <span id="billiespan6"  onclick="selectslide('billie', 6)"></span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="description">
+                <p>
+                    To be brutally honest, I have an obsession with Billie Eilish. 
+                    I crocheted this for my online friend from the US, who also has an obsession with Billie Eilish!
+                    This is Billie in her sophmore album cover, Happier Than Ever.
+                    <br><br>
+                    This pattern is by <a href="https://www.lovelycraft.com" target="_blank">lovelycraft</a>.
+                    Although crocheting this amigurumi was painful and long, the result was totally worth it! 
+                    I plan to crochet another one for myself when I replenish my <a href="yarninfo.html">Yarn&Tools</a>!
+                </p>
+            </div>
+        </section>
+        <section class="oneproject" id="section3">
+            <div>
+                <h2>3 April, 2023</h2>
+                <div class="slideshow">
+                    <a class="slideshowarrow previous" onclick="changeslide('bee', -1, 5)">&lt;</a>
+                    <a class="slideshowarrow next" onclick="changeslide('bee', 1, 5)">&gt;</a>
+                    <img id="bee1" class="firstslide" src="images/3april23/bee1.jpg"
+                        alt="crocheted bee">
+                    <img id="bee2" src="images/3april23/bee2.jpg" alt="">
+                    <img id="bee3" src="images/3april23/bee3.jpg" alt="">
+                    <img id="bee4" src="images/3april23/bee4.jpg" alt="">
+                    <a href="https://craftinghappiness.com/tiktok-bee-crochet-pattern-in-3-sizes/" target="_blank"><img id="bee5" src="images/3april23/bee5.jpg" alt="link to pattern"></a>
+                    <div class="spans">
+                        <span class="firstdot" id="beespan1" onclick="selectslide('bee', 1)"></span> <span id="beespan2" onclick="selectslide('bee', 2)"></span> <span id="beespan3"  onclick="selectslide('bee', 3)"></span> <span id="beespan4"  onclick="selectslide('bee', 4)"></span> <span id="beespan5"  onclick="selectslide('bee', 5)"></span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="description">
+                <p>
+                    Before meeting my secondary school classmate for the first time in three months,
+                    I HAD to crochet something special for her. I chose to make this bee because her favourite colours are yellow and black.
+                    <br><br>
+                    The pattern is from <a href="https://www.craftinghappiness.com" target="_blank">craftinghappiness</a>. 
+                    Their pattern is simple and easy to follow!
+                </p>
+            </div>
+        </section>
+        <section class="oneproject" id="section2">
+            <div>
+                <h2>29 March, 2023</h2>
+                <div class="slideshow">
+                    <a class="slideshowarrow previous" onclick="changeslide('crochetfrog', -1, 3)">&lt;</a>
+                    <a class="slideshowarrow next" onclick="changeslide('crochetfrog', 1, 3)">&gt;</a>
+                    <img id="crochetfrog1" class="firstslide" src="images/29march23/crochetfrog.JPG"
+                        alt="picture of crocheted frog">
+                    <img id="crochetfrog2" src="images/29march23/frogsweater.JPG" alt="crocheted frog with sweater">
+                    <a href="https://www.tinycurl.co/fancy-frog-amigurumi-crochet-pattern" target="_blank"><img id="crochetfrog3" src="images/29march23/froglink.png" alt="link to pattern"></a>
+                    <div class="spans">
+                        <span class="firstdot" id="crochetfrogspan1" onclick="selectslide('crochetfrog', 1)"></span> <span id="crochetfrogspan2" onclick="selectslide('crochetfrog', 2)"></span> <span id="crochetfrogspan3"  onclick="selectslide('crochetfrog', 3)"></span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="description">
+                <p>
+                    My first pet frog! Everyone who knows me knows that I have an obsession with frogs, so of course I had to crochet one.
+                    This fancy frog crochet pattern is by <a href="https://www.tinycurl.co" target="_blank">tinycurl</a>.
+                    The pattern is linked on the last slide!
+                    <br><br>
+                    I also decided to give my frog a cozy wool sweater. The sweater was crocheted freehand without a pattern! 
+                    Just me, my hook, and scrap wool yarn, and it turned out amazing. 
+                </p>
+            </div>
+        </section>
+        <section class="oneproject" id="section1">
+            <div>
+                <h2>28 February, 2023</h2>
+                <div class="slideshow">
+                    <a class="slideshowarrow previous" onclick="changeslide('skull', -1, 4)">&lt;</a>
+                    <a class="slideshowarrow next" onclick="changeslide('skull', 1, 4)">&gt;</a>
+                    <img id="skull1" class="firstslide" src="images/28feb23/skull1.jpg" alt="crocheted skull vest">
+                    <img id="skull2" src="images/28feb23/skull2.jpg" alt="">
+                    <img id="skull3" src="images/28feb23/skull3.jpg" alt="">
+                    <iframe id="skull4" src="https://www.youtube.com/embed/562pODN0dC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="spans">
+                        <span class="firstdot" id="skullspan1" onclick="selectslide('skull', 1)"></span> <span id="skullspan2" onclick="selectslide('skull', 2)"></span> <span id="skullspan3"  onclick="selectslide('skull', 3)"></span> <span id="skullspan4"  onclick="selectslide('skull', 4)"></span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="description">
+                <p>
+                    This skull vest was my first completed project in 2023. 
+                    Within one week, I finished crocheting and stitching together 20 skull-patterned granny squares,
+                    just in time to wear it to Arctic Monkeys' concert!
+                    <br><br>
+                    The granny square pattern is by <a href="https://www.youtube.com/channel/UCn2Ot2uanhp8xQJcuaOO4GA" target="_blank">Totally_Stitchcraft on YouTube</a>! 
+                    Click the last slide for the video tutorial :D
+                </p>
+            </div>
+        </section>
+    </section>
+    <hr>
+    <footer id="footer">
+        <div>
+            <p>my socials</p>
+            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"> @chloe_crochets</a><br>
+            <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"> @chloedoescrochets</a><br>
+            <a href="https://www.pinterest.com" target="_blank" class="fa fa-pinterest"> @chloecrochets</a><br>
+
+        </div>
+        <div>
+            <p>psst, subscribe for 10% off requests ;)</p>
+            <input type="email" placeholder="enter your email address!" id="subscribeinput" required>
+            <br>
+            <a id="subscribe" onclick="subscribe()">Subscribe</a>
+        </div>
+    </footer>
+
+
+</body>
+<script src="javascript.js"></script>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="commonstyles.css">
+    <link rel="stylesheet" type="text/css" href="formsubmit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("HpadWHSOZyo_0NyHD");
+        })();
+    </script>
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <div class="nav" id="homenav">
+        <a class="navoptions" href="homepage.html">Blog</a>
+        <a class="title">~~CHLOE CROCHETS~~</a>
+        <a ></a>
+        <a ></a>
+        <a href="javascript:void(0);" class="icon" onclick="openbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="hamoptions">
+        <a class="navoptions" href="homepage.html">Blog</a>
+    </div>
+    <div id="greyedout" onclick="openbar()"></div>
+    <div id="formdata">
+        <p id="emailstatus">email not sent!</p>
+        <h1>Thank you for your submission!</h1>
+        <h2>I will contact you shortly.<br>Here's the data you entered:</h2>
+        <script src="formjs.js"></script>
+        
+    </div>
+    <hr>
+    <footer id="footer">
+        <div>
+            <p>my socials</p>
+            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"> @chloe_crochets</a><br>
+            <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"> @chloedoescrochets</a><br>
+            <a href="https://www.pinterest.com" target="_blank" class="fa fa-pinterest"> @chloecrochets</a><br>
+
+        </div>
+        <div>
+            <p>psst, subscribe for 10% off requests ;)</p>
+            <input type="email" placeholder="enter your email address!" id="subscribeinput" required>
+            <br>
+            <a id="subscribe" onclick="subscribe()">Subscribe</a>
+        </div>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

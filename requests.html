@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>requests</title>
+    <link rel="stylesheet" type="text/css" href="formstyle.css">
+    <link rel="stylesheet" type="text/css" href="commonstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("HpadWHSOZyo_0NyHD");
+        })();
+    </script>
+</head>
+
+<body>
+    <!--navigation bar-->
+    <div class="nav">
+        <a class="navoptions" href="homepage.html">Blog</a>
+        <a class="title">~~CHLOE CROCHETS~~</a>
+        <a class="navoptions" href="yarninfo.html">Yarn & Tools</a>
+        <a class="navoptions selected" href="#">Requests</a>
+        <a href="javascript:void(0);" class="icon" onclick="openbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="hamoptions">
+        <a class="navoptions" href="homepage.html">Blog</a>
+        <a class="navoptions" href="yarninfo.html">Yarn&Tools</a>
+        <a class="navoptions selected" href="#">Requests</a>
+    </div>
+    <div id="greyedout" onclick="openbar();"></div>
+    <section class="startofmaincontent">
+        <div id="toppage">
+            <img src="images/requestpic.png" alt="" id="requestbg">
+            <div id="animatebox">
+                <div id="animateword">
+                    <span>TOPS</span>
+                    <span>BOTTOMS</span>
+                    <span>AMIGURUNI</span>
+                    <span>ACCESSORIES</span>
+                    <span>ANYTHING!</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p id="tabledes">
+                If you're interested in requesting a crocheted piece, 
+                I've made a table for an estimated price of one. 
+                Of course, the price will vary depending on the pattern,
+                so just drop me an email at <a href="mailto:myemail@gmail.com" target="_parent">myemail@gmail.com</a>
+                with the link to the desired pattern and I will quote you a price.
+            </p>
+        </div>
+        <div id="tablediv">
+        <table border="1">
+            <tr>
+                <th></th>
+                <th>base price</th>
+                <th>every 50g</th>
+                <th>local<br>(Singapore)</th>
+                <th>overseas</th>
+                <th>tracking</th>
+            </tr>
+            <tr>
+                <th>amiguruni</th>
+                <td rowspan="2">$15</td>
+                <td>+$5</td>
+                <td rowspan="4">+$2</td>
+                <td rowspan="4">+$10</td>
+                <td rowspan="4">+$3</td>
+            </tr>
+            <tr>
+                <th>tops/shorts</th>
+                <td>+$2</td>
+            </tr>
+            <tr>
+                <th>accessories</th>
+                <td rowspan="2">$5</td>
+                <td>+$3</td>
+            </tr>
+            <tr>
+                <th>others</th>
+                <td>+$4</td>
+            </tr>
+        </table>
+        </div>
+    </section>
+    <p id="formdes">
+        Complete this form if you want to request a custom crochet piece! 
+        Even if you have emailed me about the price, please still submit this form.
+        <br><br>After submission of form, I will send back an email to confirm the price and other necessary details.
+    </p>
+    <form method="get" action="formsubmit.html">
+        <fieldset>
+            <legend>Personal Particulars</legend>
+            <p>
+                <label>Name: </label>
+                <input type="text" name="name" pattern="[a-zA-Z1-9,.!?\s]*" required>
+            </p>
+            <p>
+                <label>Email: </label>
+                <input type="email" name="email" required>
+            </p>
+            <p>
+                <label>Number: </label>
+                <input type="tel" name="number" pattern="[0-9\s]+">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Request Crochet Product</legend>
+            <p>
+                <label>Link (youtube / website): </label>
+                <input type="url" name="link" required>
+            </p>
+            
+            <p>
+                <label>Price Offer (in SGD): $</label>
+                <input type="number" name="price" required>
+            </p>
+            <p>
+                <label>Desired Colours / Any Comments: </label>
+                <input name="comments" pattern="[a-zA-Z1-9,.!?\s]*" required>
+            </p>
+        </fieldset>
+        <input type="submit" value="Submit" id="submitbutton" name="submit">
+    </form>
+    <hr>
+    <footer id="footer">
+        <div>
+            <p>my socials</p>
+            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"> @chloe_crochets</a><br>
+            <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"> @chloedoescrochets</a><br>
+            <a href="https://www.pinterest.com" target="_blank" class="fa fa-pinterest"> @chloecrochets</a><br>
+
+        </div>
+        <div>
+            <p>psst, subscribe for 10% off requests ;)</p>
+            <input type="email" placeholder="enter your email address!" id="subscribeinput" required>
+            <br>
+            <a id="subscribe" onclick="subscribe()">Subscribe</a>
+
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>

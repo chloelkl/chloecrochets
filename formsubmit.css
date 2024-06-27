@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+#emailstatus {
+    text-align: center;
+    border: solid 2px #893F04;
+}
+#formdata {
+    margin: 100px auto;
+    width: 50vw;
+    font-size: 1.2em;
+    color: #893F04;
+}
+/*for mobile*/
+@media only screen and (max-width: 768px) {
+    #formdata {
+        margin: 40px auto;
+        font-size: 1em;
+        width: 80vw;
+    }
+}
